@@ -104,28 +104,26 @@ h1 {
 }
 
 /* product pitch */
-.pitch-info {
-  margin: 50px auto 50px;
-
+.user {
+  margin: 80px auto 80px;
+  overflow: auto;
 }
-
+.user > h2 {
+  margin-top: 0px;
+}
 .product-pitch {
   display: inline-block;
   width: 450px;
   height: 270px;
   float: right;
 }
+/* user journey */
 
-.user-journey {
-  margin-top: 80px;
-  display: block;
-}
 .core-journey {
-  display: inline-block;
-
   width: 450px;
   height: 270px;
   float: left;
+  margin-right: 20px;
 }
 
 /* footer */
