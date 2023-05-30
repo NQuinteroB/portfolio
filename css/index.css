@@ -75,8 +75,7 @@ h1, h2 {
 }
 
 .menu-list li {
-  font-size: 1.5rem;
-
+  font-size: 1.3rem;
   font-weight: 600;
   list-style: none;
   background-color:#A88A00 ;
@@ -84,12 +83,17 @@ h1, h2 {
   padding: 0.75rem 1.5rem;
   border-radius: 50px;
   margin: 0 4rem;
-
+  color: #010141;
+  transition: all 0.3s ease-in-out;
 }
 
-.menu-list li a {
-  color: #00005c;
+.menu-list li:hover {
+  background-color: #010141 ;
+  color: #A88A00;
+  border: 1px solid ;
+  transform: scale(1.1);
 }
+
 /* footer */
 
 .footer {
@@ -121,7 +125,7 @@ h1, h2 {
 }
 
 .contact-list a {
-  color: #00005c;
+  color: #010141;
   margin: 0 12;
 }
 

@@ -50,7 +50,7 @@ h1 {
   align-content: center;
   display: inline-block;
   padding: 0 20px;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 18px;
 }
 
@@ -78,8 +78,6 @@ h1 {
 
 .profile-img {
  display: flex;
-
-
 }
 
 .about-info {
@@ -116,8 +114,13 @@ h1 {
   border-radius: 4px;
   padding: 8px 54px;
   display: inline-block;
-
 }
+
+.btn-skills:hover {
+  background-color: #C864A4;
+  color: #010141;
+}
+
 
 .skill {
     width: 100%;

@@ -19,6 +19,7 @@ h1 {
   font-size: 2.5rem;
 }
 
+
 /* navbar */
 .nav-bar {
   background-color: #C864A4;
@@ -57,28 +58,83 @@ h1 {
   width: 900px;
   margin: 0 auto;
 }
-
-/* projects container */
-.projects {
-  display: flex;
-  justify-content: space-around;
-  margin: 32px;
-
-}
-
-.my-projects {
+/* project - about */
+.project-about {
   text-align: center;
-  margin: 30px;
 }
 
-.project-logo {
+.project-about > h1 {
+  margin-top: 0;
+  color: #3A1996;
+}
+
+.project-about > p {
+  line-height: 1.6;
+  font-size: 18px;
+
+}
+
+.dd-logo {
   border-radius: 50%;
   height: 150px;
-  transition: all 0.5s ease-out;
+  margin-top: 32px;
+  text-align: center;
 }
 
-.project-logo:hover {
-  transform: scale(1.1);
+/* main container */
+
+.main {
+  margin-top: 80px;
+
+}
+.final-project {
+  margin: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#main-screen {
+  height: 420px;
+
+}
+
+.discount-discover {
+  height: 350px;
+}
+
+/* product pitch */
+.user {
+  margin: 80px auto 80px;
+  overflow: auto;
+}
+.user > h2 {
+  margin-top: 0px;
+}
+.product-pitch {
+  /* display: inline-block; */
+  width: 450px;
+  height: 270px;
+  float: right;
+}
+/* user journey */
+
+.core-journey {
+  width: 450px;
+  height: 270px;
+  float: left;
+  margin-right: 20px;
+}
+
+#figma > p {
+  margin: 24px 0 32px;
+}
+
+#figma > iframe {
+  margin: 0 auto;
+  padding-left: 50px;
+  border: none;
+
 }
 /* footer */
 
@@ -93,8 +149,6 @@ h1 {
 
   bottom: 0;
   width: 100%;
-
-
 }
 
 .contact-list {
@@ -107,6 +161,6 @@ h1 {
 }
 
 .contact-list a {
-  color: #00005c;
+  color: #010141;
   margin: 0 12px;
 }

@@ -1,40 +1,56 @@
-<!-- TODO 1: Create the HTML Boilerplate -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Natalia Quintero - Web Developer</title>
+  <link rel="stylesheet" href="../css/udemy.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.2/css/all.css">
+  <title>About Me</title>
 </head>
 <body>
-<h1>Natalia Quintero - Portfolio</h1>
-<p>I want to becomme a Web Developer. These are the project's for the Udemy Web Development course:<p>
-  <!-- TODO 2: Add Your previous projects' HTML into the public folder -->
-
-  <!-- TODO 3: Take screenshots of your project previews and add the images to the images folder -->
-  <!-- TODO 4: Add titles/subtitles etc. -->
-  <!-- TODO 5: Add a link to the project pages -->
-  <!-- TODO 6: Add images to show the project previews
-  HINT for TODO 6: You can use the height attribute set to 200 to make the image smaller:
-  https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-height -->
-
-
-  <a href="./public/about.html"><h2>About me project</h2></a>
-  <p>Learn more about me. Who am I as a person and my educational Background</p>
-  <img src="./assets/images/about-me.png" alt="Natalia Quintero profile" height="200px">
-
-  <a href="./public/fav-books.html"><h2>Favorite Movies (Books) Project</h2></a>
-  <p>I like to watch movies but I prefer reading. This are the books I've loved the most</p>
-  <img src="./assets/images/fav-books.png" alt="Natalia Quintero profile" height="200px">
-
-  <a href="./public/birthday-invite.html"><h2>Birthday Invite Project</h2></a>
-  <p>Fun project on how to create a digital birthday invitation, adding a linked address and wish list</p>
-  <img src="./assets/images/birthday-project.png" alt="birthay invite" height="200px">
-
-  <!-- TODO 7: Add the Contact Me and About Me page links -->
-  <hr>
-  <p>Did I catch your attention?<br>
-    Contact me <a href="./public/contact.html">here</a>
+<nav class="nav-bar">
+  <a href="/index.html"><p class="nav-logo">NQB</p></a>
+  <div id="nav-menu">
+    <ul class="nav-list">
+      <li><a href="./about.html">About me </a></li>
+      <li><a href="">Resume</a></li>
+      <li><a href="./projects.html">Projects</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="container intro">
+  <h1>Udemy - Web Development Bootcamp</h1>
+  <p>I am eager to learn new things and keep improving my knwoledge. In this site you can find some of the projects I have
+    working on while doing the online course from Udemy.
   </p>
+</div>
+
+<div class="container cards">
+  <div class="image-card">
+      <img src="../assets/images/udemy-TinDog.png" alt="" class="skill">
+      <h3>TinDog - Website</h3>
+      <a href="../udemy-projects/website-project/index.html" class="btn-skills">Visit website</a>
+  </div>
+
+  <div class="image-card">
+    <img src="../assets/images/udemy-design-agency.png" class="skill" alt="">
+    <h3>Fashion Design</h3>
+    <a href="../udemy-projects/8.4 Web Design Agency Project/index.html" class="btn-skills">Visit website</a>
+  </div>
+</div>
+
+<!-- Footer section -->
+<div class="footer">
+      <ul class="contact-list">
+        <li>
+          <a href="#">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </li>
+      </ul>
+</div>
 </body>
 </html>

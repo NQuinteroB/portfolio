@@ -58,73 +58,57 @@ h1 {
   width: 900px;
   margin: 0 auto;
 }
-/* project - about */
-.project-about {
-  text-align: center;
-}
 
-.project-about > h1 {
-  margin-top: 0;
-  color: #3A1996;
-}
+/* cards */
 
-.project-about > p {
-  line-height: 1.6;
-  font-size: 18px;
+.intro  {
+  margin-top: 50px;
 
 }
 
-.dd-logo {
-  border-radius: 50%;
-  height: 150px;
-  margin-top: 32px;
-  text-align: center;
-}
-
-/* main container */
-
-.main {
-  margin-top: 80px;
-
-}
-.final-project {
+.image-card {
+  background: white;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding: 12px 12px 30px;
   margin: 30px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  text-align: center;
 }
-
-#main-screen {
-  height: 420px;
+.image > h3 {
+  margin: 20px;
+  letter-spacing: 4px;
 
 }
 
-.discount-discover {
-  height: 350px;
-}
-
-/* product pitch */
-.user {
-  margin: 80px auto 80px;
-  overflow: auto;
-}
-.user > h2 {
-  margin-top: 0px;
-}
-.product-pitch {
+.btn-skills{
+  background-color: #010141;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  border-style: none;
+  border-radius: 4px;
+  padding: 8px 54px;
   display: inline-block;
-  width: 450px;
-  height: 270px;
-  float: right;
 }
-/* user journey */
 
-.core-journey {
-  width: 450px;
-  height: 270px;
-  float: left;
-  margin-right: 20px;
+.skill {
+    width: 100%;
+    height: 270px;
+    object-fit: scale-down;
+    border-radius: 4px;
+    background-color: #FAF9F7;
 }
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 20px;
+  margin: 3rem auto 3rem;
+
+}
+
 
 /* footer */
 
@@ -136,10 +120,8 @@ h1 {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-
   bottom: 0;
   width: 100%;
-
 }
 
 .contact-list {
