@@ -51,6 +51,7 @@ h1 {
   padding: 0 20px;
   font-weight: 500;
   font-size: 18px;
+  color: #010141;
 }
 
 .nav-list {
@@ -123,23 +124,19 @@ h1 {
 
 .skill {
     width: 100%;
-    height: 270px;
+    height: 190px;
     object-fit: cover;
     border-radius: 4px;
 }
 
-#fashion {
-  object-position: 0 -120px;
-}
 #aliadas {
-  object-position: 84px 3px;
+  object-position: 45px 3px;
   object-fit: scale-down;
 }
 
 .cards {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
   margin-top: 3rem;
 
@@ -187,10 +184,15 @@ h1 {
   }
 
   #aliadas {
-    object-position: 34px 3px;
-
     object-fit: scale-down;
+    object-position: 0 0;
   }
+
+  .btn-skills {
+    font-size: 12px;
+    padding: 8px 46px;
+  }
+
 
 }
 
@@ -295,7 +297,7 @@ h1 {
   }
 
   .contact-list a {
-    color: #00005c;
+    color: #010141;
     margin: 0 6px;
   }
 

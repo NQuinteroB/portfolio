@@ -57,7 +57,7 @@ h1, h2 {
 
 /* Middle container */
 .middle {
-  margin: 75px;
+  margin: 75px auto;
 }
 
 .middle h2 {
@@ -67,7 +67,7 @@ h1, h2 {
 }
 
 .menu {
-  margin: 90px 0;
+  margin: 90px auto;
 }
 
 .menu-list {
@@ -133,6 +133,10 @@ h1, h2 {
 
 @media (max-width: 960px) {
   /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+
   .top h1 {
     letter-spacing: 38px;
     font-size: 3.5rem;
@@ -140,14 +144,19 @@ h1, h2 {
   .menu-list li {
     margin: 12px 24px;
   }
+
+
 }
 
 @media (max-width: 720px) {
   /* For a screen < 720px, this CSS will be read */
+
+  .container {
+    width: 500px;
+  }
   .main-container {
     margin-top: 40px;
   }
-
 
   .top h1 {
     letter-spacing: 38px;
@@ -174,4 +183,15 @@ h1, h2 {
   .container {
     width: 300px;
   }
+  .top h1 {
+    font-size: 1.9rem;
+    letter-spacing: 12px;
+  }
+
+  #greeting {
+    font-family: 'Engagement', cursive;
+    font-size: 50px;
+    padding: 30px;
+  }
+
 }
