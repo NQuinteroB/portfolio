@@ -8,7 +8,6 @@ body {
 
 a {
   text-decoration: none;
-  color: #000;
 }
 
 h1, h2, h3 {
@@ -39,7 +38,7 @@ h1 {
   margin: 0;
 }
 
-#nav-menu li {
+#nav-menu a {
   display: flex;
   justify-content: center;
   align-content: center;
@@ -47,6 +46,7 @@ h1 {
   padding: 0 20px;
   font-weight: 400;
   font-size: 18px;
+  color: #010141;
 }
 
 .nav-list {
@@ -127,11 +127,12 @@ h1 {
     line-height: 1.9;
   }
 
-  #nav-menu li {
-    display: inline-block;
-    padding: 0px 8px;
+  #nav-menu a {
+    text-align: center;
+    display: block;
+    padding: 0 20px;
     font-weight: 400;
-    font-size: 16px;
+    color: #010141;
   }
 
   .container {
