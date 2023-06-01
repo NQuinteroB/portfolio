@@ -74,26 +74,25 @@ h1, h2 {
   padding: 0;
 }
 
-.menu-list li {
+.menu-list a {
   font-size: 1.3rem;
   font-weight: 600;
   list-style: none;
   background-color:#A88A00 ;
   display: inline-block;
-  padding: 0.75rem 1.5rem;
+  padding: 0.75rem 2.5rem;
   border-radius: 50px;
   margin: 0 4rem;
-  color: #010141;
   transition: all 0.3s ease-in-out;
+  color: #010141;
 }
 
-.menu-list li:hover {
+.menu-list a:hover {
   background-color: #010141 ;
-  color: #A88A00;
-  border: 1px solid ;
+  border: 1px solid #A88A00 ;
   transform: scale(1.1);
+  color: #A88A00;
 }
-
 /* footer */
 
 .footer {
@@ -107,12 +106,6 @@ h1, h2 {
   /* position: fixed;
   bottom: 0;
   width: 100%; */
-}
-
-.contact {
-  /* display: flex;
-  justify-content: center;
-  margin: 170px auto; */
 }
 
 .contact-list {
