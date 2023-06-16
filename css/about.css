@@ -27,7 +27,6 @@ h1 {
 .nav-bar {
   background-color: #C864A4;
   padding: 10px 40px;
-
   display: flex;
   justify-content: space-between;
 }
@@ -36,15 +35,23 @@ h1 {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 900;
   font-size: 36px;
-  color: #010141;
   display: flex;
   justify-content: center;
-  align-content: center;
+  align-items: center;
   margin: 0;
 }
 
-#nav-menu li {
+.nav-logo a{
+  color: #010141;
+}
+
+.nav-list {
+  list-style-type: none;
   display: flex;
+  padding: 0;
+}
+
+.nav-list a {
   justify-content: center;
   align-content: center;
   display: inline-block;
@@ -52,10 +59,6 @@ h1 {
   font-weight: 500;
   font-size: 18px;
   color: #010141;
-}
-
-.nav-list {
-  padding: 0;
 }
 
 /* about me */
@@ -199,13 +202,6 @@ h1 {
 @media (max-width: 720px) {
   /* For a screen < 720px, this CSS will be read */
 
-  #nav-menu li {
-    display: inline-block;
-    padding: 0px 8px;
-    font-weight: 400;
-    font-size: 16px;
-  }
-
   h1 {
     font-size: 2rem;
   }
@@ -264,9 +260,17 @@ h1 {
     width: 300px;
   }
 
-  #nav-menu a {
-    text-align: center;
+
+  .nav-list {
     display: block;
+    text-align: center;
+  }
+
+  .nav-list li {
+    padding: 0px 8px;
+  }
+
+    .nav-list a {
     padding: 0 20px;
     font-weight: 400;
     color: #010141;
