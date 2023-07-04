@@ -295,6 +295,21 @@ h2 {
     font-size: 1.9rem;
   }
 
+  .nav-list {
+    display: block;
+    text-align: center;
+  }
+
+  .nav-list li {
+    padding: 0px 8px;
+  }
+
+  .nav-list a {
+    padding: 0 20px;
+    font-weight: 400;
+    color: #010141;
+  }
+
   .intro p {
     font-size: 15px;
   }

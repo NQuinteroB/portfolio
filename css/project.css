@@ -139,6 +139,11 @@ h1, h2 {
     line-height: 1.9;
   }
 
+  .nav-list {
+    display: block;
+    text-align: center;
+  }
+
   .nav-list li {
     padding: 0px 8px;
   }
