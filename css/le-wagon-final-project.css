@@ -63,6 +63,7 @@ h1 {
   color: #010141;
 }
 
+
 /* project - about */
 .project-about {
   text-align: center;
@@ -246,11 +247,16 @@ h1 {
   .container {
     width: 300px;
   }
-
-
-  #nav-menu a {
-    text-align: center;
+  .nav-list {
     display: block;
+    text-align: center;
+  }
+
+  .nav-list li {
+    padding: 0px 8px;
+  }
+
+  .nav-list a {
     padding: 0 20px;
     font-weight: 400;
     color: #010141;
