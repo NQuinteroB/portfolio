@@ -119,7 +119,7 @@ h1 {
 }
 
 .skill-name {
-  display: fle;
+  flex: 1;
 }
 
 .background-card h3 {
