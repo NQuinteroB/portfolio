@@ -1,5 +1,4 @@
-
-@import url("./_navbar.css");
+@import "./navbar.css" layer(about);
 @import url('https://fonts.googleapis.com/css2?family=Engagement&family=Raleway:wght@100;300;400;600&family=Source+Sans+Pro:wght@300;600;900&display=swap');
 
 
