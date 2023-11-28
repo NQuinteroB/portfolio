@@ -1,4 +1,4 @@
-.btn-skills{
+.btn-blue {
   background-color: #010141;
   color: white;
   font-size: 14px;
@@ -8,10 +8,18 @@
   border-radius: 4px;
   padding: 8px 54px;
   display: inline-block;
-  margin-top: 24px;
+  margin-top: 12px ;
 }
 
-.btn-skills:hover {
+.btn-blue:hover {
   background-color: #C864A4;
   color: #010141;
+}
+
+@media (max-width: 960px) {
+  .btn-blue {
+    padding: 8px 46px;
+    font-size: 12px;
+  }
+
 }

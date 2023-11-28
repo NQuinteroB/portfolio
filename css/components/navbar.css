@@ -36,7 +36,7 @@
   color: #010141;
 }
 
-@media (max-width: 540px) {
+@media (max-width: 576px) {
   /* For a screen < 540px, this CSS will be read */
 
   .nav-list {
@@ -48,7 +48,7 @@
     padding: 0px 8px;
   }
 
-    .nav-list a {
+  .nav-list a {
     padding: 0 20px;
     font-weight: 400;
     color: #010141;
@@ -60,7 +60,7 @@
   }
 
   .contact-list a {
-    color: #010141;
+    color: #10101d;
     margin: 0 6px;
   }
 

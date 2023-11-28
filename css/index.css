@@ -1,13 +1,27 @@
-
-/* @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;600&family=Source+Sans+Pro:wght@300;600;900&display=swap'); */
-
 @import url('https://fonts.googleapis.com/css2?family=Engagement&family=Raleway:wght@100;300&family=Source+Sans+Pro:wght@300;600;900&display=swap');
 
+@import url('../css/pages/about.css');
+@import url('../css/pages/resume.css');
+@import url('../css/pages/project.css');
+@import url('../css/pages/le-wagon-final-project.css');
+@import url('../css/pages/udemy.css');
+
+@import url('../css/components/navbar.css');
+@import url('../css/components/container.css');
+@import url('../css/components/footer.css');
+@import url('../css/components/button.css');
+@import url('../css/components/cards.css');
+
+html {
+  height: 100%;
+}
+
 body {
+  min-height: 100%;
   margin: 0;
+  display: flex;
+  flex-direction: column;
   line-height: 1.6;
-  background: #010141;
-  color: white;
   font-family: 'Raleway', sans-serif;
 }
 
@@ -19,55 +33,72 @@ h1, h2 {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-.container {
-  margin: 50px auto;
-  text-align: center;
+h1, h2, h3 {
+  color: #010141;
+}
+
+/* background */
+
+.background-white {
+  background-color: white ;
+}
+
+.background-blue {
+  background-color: #010141;
 }
 
 .main-container {
-  margin-top: 50px;
-  padding: 20px 0;
+  width: 1000;
+  text-align: center;
+  color: white;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
 }
 
 /* Top container */
 
 .top h1{
-  letter-spacing: 36px;
-  font-size: 65px;
+  letter-spacing: 24px;
+  font-size: 2.7rem;
+  margin: 0 auto 0;
+  color: white;
 }
 
 #greeting {
   font-family: 'Engagement', cursive;
-  font-size: 50px;
-  padding: 30px;
+  font-size: 36px;
+  margin: 30px 36px;
 }
 
-.description {
-  line-height: 3rem;
-}
-
-.top p {
-  font-size: 22px;
+.container .description {
+  font-size: 18px;
   opacity: 0.7;
-}
-.web {
-  font-size: 32px;
-  opacity: 1;
+  line-height: 1.9rem;
+  margin: 12px 28px;
+  color: white;
+  text-align: center;
 }
 
 /* Middle container */
 .middle {
-  margin: 75px auto;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .middle h2 {
-  font-size: 32px;
-  letter-spacing: 12px;
-
+  font-size: 24px;
+  letter-spacing: 9px;
+  color: white;
 }
 
 .menu {
-  margin: 90px auto;
+  margin: 30px auto;
 }
 
 .menu-list {
@@ -75,14 +106,14 @@ h1, h2 {
 }
 
 .menu-list a {
-  font-size: 1.3rem;
-  font-weight: 600;
+  font-size: 1.2rem;
+  font-weight: 500;
   list-style: none;
   background-color:#A88A00 ;
   display: inline-block;
-  padding: 0.75rem 2.5rem;
+  padding: 0.5rem 2rem;
   border-radius: 50px;
-  margin: 0 4rem;
+  margin: 0 2.5rem;
   transition: all 0.3s ease-in-out;
   color: #010141;
 }
@@ -95,58 +126,42 @@ h1, h2 {
 }
 /* footer */
 
-.footer {
-  background-image: url("../assets/images/wave.svg");
-  background-size: cover;
-  height: 180px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  /* position: fixed;
-  bottom: 0;
-  width: 100%; */
-}
-
-.contact-list {
-  padding: 0;
-}
-
-.contact-list li {
-  font-size: 3.7rem;
-  list-style: none;
-}
-
-.contact-list a {
-  color: #010141;
-  margin: 0 12;
-}
 
 /* media queries */
 
-@media (max-width: 960px) {
+@media (max-width: 992px) {
   /* For a screen < 960px, this CSS will be read */
-  .container {
-    width: 700px;
+
+  .main-container {
+    width: 800px;
+  }
+
+  .container .description {
+    margin: 24px auto;
   }
 
   .top h1 {
     letter-spacing: 38px;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
+    margin: 50px auto 18px;
   }
-  .menu-list li {
-    margin: 12px 24px;
+
+  .middle {
+    margin-bottom: 24px;
   }
+
+  .menu {
+    margin-top: 30px;
+  }
+
+
 
 
 }
 
-@media (max-width: 720px) {
+@media (max-width: 768px) {
   /* For a screen < 720px, this CSS will be read */
 
-  .container {
-    width: 500px;
-  }
   .main-container {
     margin-top: 40px;
   }
@@ -156,47 +171,24 @@ h1, h2 {
     font-size: 2.6rem;
   }
 
-  .menu-list {
-    display: inline;
-  }
-
-  .menu-list li {
-
-    margin: 30px 24px;
-  }
-
-  .menu-list li a {
-
-    margin: 12px 24px;
-  }
 }
 
-@media (max-width: 540px) {
+@media (max-width: 576px) {
   /* For a screen < 540px, this CSS will be read */
-  .container {
-    width: 300px;
-  }
+
   .top h1 {
-    font-size: 1.9rem;
+    font-size: 1.8rem;
     letter-spacing: 12px;
   }
 
   #greeting {
     font-family: 'Engagement', cursive;
-    font-size: 50px;
+    font-size: 40px;
     padding: 30px;
   }
 
   .menu-list a {
-    font-size: 1.2rem;
-    font-weight: 600;
-    list-style: none;
-    background-color: #A88A00;
-    display: inline-block;
-    padding: 0.75rem 2.5rem;
-    border-radius: 50px;
-    margin: 1rem 4rem;
-    transition: all 0.3s ease-in-out;
-    color: #010141;
-}
+    margin-bottom: 16px;
+  }
+
 }

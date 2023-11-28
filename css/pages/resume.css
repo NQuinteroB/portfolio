@@ -1,36 +1,14 @@
-@import url('./navbar.css');
-@import url('https://fonts.googleapis.com/css2?family=Engagement&family=Raleway:wght@100;300;400;600&family=Source+Sans+Pro:wght@300;600;900&display=swap');
-
-body {
-  margin: 0;
-  line-height: 1.6;
-  font-family: 'Raleway', sans-serif;
-  background-color: #010141;
-}
-
-a {
-  text-decoration: none;
-}
-
-h1, h2, h3 {
-  font-family: 'Source Sans Pro', sans-serif;
-}
-
-h1 {
-  font-size: 3.5rem;
-}
-
-h3 {
-  font-size: 1.1rem;
-}
 
 .container {
-  width: 900px;
   margin: 0 auto 16px;
-  background-color: rgba(255, 255, 255, 0.9);
-  padding: 20px 40px ;
-  border-radius: 4px;
+  /* padding: 20px 40px ; */
 }
+
+.container.white {
+  padding: 20px 40px ;
+  margin: 12px auto 12px;
+}
+
 
 hr {
   border: 0;
@@ -41,24 +19,24 @@ hr {
 
 /* intro */
 
-.intro {
+#intro {
   margin-top: 50px;
   text-align: center;
 }
 
-.intro h1 {
+#intro h1 {
   margin: 0;
   letter-spacing: 2px;
 }
 
-.intro p {
+#intro p {
   font-size: 20px;
   letter-spacing: 2px;
   margin-bottom: 12px;
   color: #A88A00;
 }
 
-.media{
+.media {
   font-size: 20px;
   color: #000000;
   margin: 12px 12px;
@@ -77,8 +55,6 @@ h2 {
   margin: 0;
 }
 
-
-
 /* languages */
 
 .languages {
@@ -92,8 +68,8 @@ h2 {
 }
 
 .language img {
-  height: 70px;
-  width: 70px;
+  height: 40px;
+  width: 40px;
 }
 
 .language h3, p {
@@ -104,18 +80,20 @@ h2 {
 
 .education {
   display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: 1fr;
-  text-align:center;
-  margin: 0 auto;
-  height: 150px;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
 }
 
-.fashion p {
-  margin-top: 45px;
+.title {
+  display: flex;
+  align-items: start;
+  text-align: center;
+  justify-content: center;
 }
 
-
+.dates {
+  text-align: center;
+}
 
 /* skills */
 
@@ -135,14 +113,24 @@ h2 {
 
 
 /* work experience */
-.work {
-  margin-bottom: 100px;
+
+#work {
+  margin-bottom: 50px;
 }
+
 .work-experience {
   display: grid;
   grid-template-columns: 1fr 3fr;
   width: 800px;
   margin: 0 auto 24px;
+}
+
+.work-experience h3, p{
+  margin-bottom: 8px;
+}
+
+.work-experience span {
+  opacity: 0.7;
 }
 
 .cv-online {
@@ -152,7 +140,7 @@ h2 {
 
 .button {
   background-color: #010141;
-  color: #C864A4;
+  color: #ffffff;
   padding: 12px 24px;
   border-radius: 4px;
   font-weight: 600;
@@ -161,41 +149,7 @@ h2 {
 
 
 
-/* footer */
-.footer {
-  background-image: url("../assets/images/wave.svg");
-  background-size: cover;
-  height: 180px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  /* position: fixed;
-  bottom: 0;
-  width: 100%; */
-}
-
-/* .contact {
-  /* display: flex;
-  justify-content: center;
-  margin: 170px auto; }*/
-
-
-.contact-list {
-  padding: 0;
-}
-
-.contact-list li {
-  font-size: 3.7rem;
-  list-style: none;
-}
-
-.contact-list a {
-  color: #010141;
-  margin: 0 12;
-}
-
-@media (max-width: 960px) {
+@media (max-width: 992px) {
   /* For a screen < 960px, this CSS will be read */
   .container {
     width: 600px;
@@ -211,7 +165,7 @@ h2 {
 
 }
 
-@media (max-width: 720px) {
+@media (max-width: 768px) {
   /* For a screen < 960px, this CSS will be read */
   .container {
     width: 500px;
@@ -245,36 +199,18 @@ h2 {
   }
 }
 
-@media (max-width: 540px) {
+@media (max-width: 576px) {
   /* For a screen < 540px, this CSS will be read */
   body {
     line-height: 1.9;
   }
 
-  .container {
-    width: 300px;
-  }
   h1 {
     font-size: 1.9rem;
   }
 
-  .nav-list {
-    display: block;
-    text-align: center;
-  }
-
-  .nav-list li {
-    padding: 0px 8px;
-  }
-
-  .nav-list a {
-    padding: 0 20px;
-    font-weight: 400;
-    color: #010141;
-  }
-
   .intro p {
-    font-size: 15px;
+    font-size: 16px;
   }
 
   .media {
@@ -289,9 +225,6 @@ h2 {
 
   }
 
-  .languages {
-    flex-direction: column;
-  }
 
   .language {
     text-align: center;
@@ -300,23 +233,27 @@ h2 {
   }
 
   .language img {
-    height: 90px;
-    width: 90px;
+    height: 60px;
+    width: 60px;
   }
 
-  .education {
+  /* .education {
     text-align: center;
     display: inline;
+  } */
+
+  .edu {
+    display: grid;
+    grid-template-rows: 1fr;
   }
 
-  .skills {
-    text-align: center;
-  }
   .skill {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: left;
+    height: max-content;
     text-align: center;
   }
+
 
   .work-experience {
     display: inline;
