@@ -4,6 +4,7 @@
 }
 
 .footer-img {
+  background-image: url("/assets/images/wave.svg");
   background-size: cover;
   display: flex;
   justify-content: center;
