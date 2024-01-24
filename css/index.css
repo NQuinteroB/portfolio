@@ -56,53 +56,64 @@ h1, h2, h3 {
 .center {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   flex-grow: 1;
 }
 
 /* Top container */
 
+
+.top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: space-between;
+}
+
 .top h1{
   letter-spacing: 24px;
   font-size: 2.7rem;
-  margin: 0 auto 0;
+  margin: 36px auto 0;
   color: white;
 }
 
+
+
 #greeting {
   font-family: 'Engagement', cursive;
-  font-size: 36px;
-  margin: 30px 36px;
+  font-size: 2.8rem;
+  /* margin: 10px 36px; */
+  color: white;
+
 }
 
 .container .description {
-  font-size: 18px;
+  font-size: 1.2rem;
   opacity: 0.7;
   line-height: 1.9rem;
-  margin: 12px 28px;
   color: white;
   text-align: center;
 }
 
 /* Middle container */
-.middle {
-  margin: 0 auto;
-  text-align: center;
-}
 
-.middle h2 {
-  font-size: 24px;
+#my-work {
+  font-size: 1.4rem;
   letter-spacing: 9px;
   color: white;
+  text-align: center;
+  margin-top: 30px;
 }
 
 .menu {
-  margin: 30px auto;
+  margin: 30px auto 0;
+  text-align: center;
 }
 
 .menu-list {
   padding: 0;
+  margin-bottom: 0;
 }
 
 .menu-list a {
@@ -176,19 +187,25 @@ h1, h2, h3 {
 @media (max-width: 576px) {
   /* For a screen < 540px, this CSS will be read */
 
+  .main-container {
+    width: 100%;
+  }
   .top h1 {
-    font-size: 1.8rem;
+    font-size: 1.6em;
     letter-spacing: 12px;
   }
 
   #greeting {
     font-family: 'Engagement', cursive;
-    font-size: 40px;
-    padding: 30px;
+    font-size: 2rem;
+    margin: 40px;
+  }
+
+  #my-work {
+    margin: 40px;
   }
 
   .menu-list a {
-    margin-bottom: 16px;
+    margin-bottom: 40px;
   }
-
 }
