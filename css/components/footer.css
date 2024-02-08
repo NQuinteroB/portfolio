@@ -1,0 +1,34 @@
+
+.footer {
+  width: 100%;
+}
+
+.footer-img {
+  background-image: url("../../assets/images/wave.svg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 130px;
+}
+
+.footer-bottom {
+  color: #C964A4;
+  height: 150px;
+}
+
+.contact-list {
+  margin: 0;
+  padding: 0;
+}
+
+.contact-list li {
+  font-size: 3.2rem;
+  list-style: none;
+}
+
+.contact-list a {
+  color: #010141;
+  margin: 0 12px;
+}

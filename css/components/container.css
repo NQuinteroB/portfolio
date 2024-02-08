@@ -1,0 +1,33 @@
+.container {
+  width: 900px;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+
+.white {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.container-all {
+  flex-grow: 1;
+}
+
+@media (max-width: 992px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    width: 500px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    width: 400px;
+  }
+}
