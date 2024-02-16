@@ -5,10 +5,13 @@
 }
 
 .container.white {
-  padding: 20px 40px ;
   margin: 12px auto 12px;
 }
 
+.content {
+  padding: 0 14px;
+  margin: 12px auto 12px;
+}
 
 hr {
   border: 0;
@@ -200,7 +203,6 @@ h2 {
 }
 
 @media (max-width: 576px) {
-  /* For a screen < 540px, this CSS will be read */
   body {
     line-height: 1.9;
   }
@@ -261,5 +263,11 @@ h2 {
 
   .work-experience ul {
     margin: 24px 0 0 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .container .white {
+    width: 95%;
   }
 }
