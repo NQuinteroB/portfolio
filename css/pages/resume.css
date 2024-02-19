@@ -5,7 +5,11 @@
 }
 
 .container.white {
-  padding: 20px 40px ;
+  margin: 12px auto 12px;
+}
+
+.content {
+  padding: 8px 14px;
   margin: 12px auto 12px;
 }
 
@@ -22,6 +26,11 @@ hr {
 #intro {
   margin-top: 50px;
   text-align: center;
+}
+
+#intro .content {
+  padding: 2rem;
+
 }
 
 #intro h1 {
@@ -79,20 +88,28 @@ h2 {
 /* education */
 
 .education {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .title {
   display: flex;
-  align-items: start;
+  flex: 1;
+  flex-direction: column;
   text-align: center;
   justify-content: center;
+  align-items: center;
 }
 
-.dates {
-  text-align: center;
+.title h3 {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.title p {
+  margin-top: 1rem;
 }
 
 /* skills */
@@ -111,18 +128,19 @@ h2 {
   margin: 8px 0 8px;
 }
 
-
 /* work experience */
-
 #work {
   margin-bottom: 50px;
 }
-
 .work-experience {
   display: grid;
   grid-template-columns: 1fr 3fr;
   width: 800px;
   margin: 0 auto 24px;
+}
+
+.work-experience h3 {
+  font-weight: bold;
 }
 
 .work-experience h3, p{
@@ -152,9 +170,8 @@ h2 {
 @media (max-width: 992px) {
   /* For a screen < 960px, this CSS will be read */
   .container {
-    width: 600px;
+    width: 95%;
   }
-
 
   .work-experience {
     display: grid;
@@ -165,10 +182,9 @@ h2 {
 
 }
 
-@media (max-width: 768px) {
-  /* For a screen < 960px, this CSS will be read */
+@media (min-width: 481px) and (max-width: 767px){
   .container {
-    width: 500px;
+    width: 95%;
   }
 
   .intro h1 {
@@ -180,7 +196,6 @@ h2 {
   .intro p {
     font-size: 16px;
     letter-spacing: 2px;
-
   }
 
   .media {
@@ -189,28 +204,30 @@ h2 {
     margin: 12px 12px;
   }
 
-
   .education {
     height: 100%;
+    display: block;
   }
+
 
   .fashion p {
     margin-top: 20px;
   }
 }
 
-@media (max-width: 576px) {
-  /* For a screen < 540px, this CSS will be read */
+@media (max-width: 480px) {
   body {
     line-height: 1.9;
   }
 
-  h1 {
+  #intro h1 {
     font-size: 1.9rem;
+    margin-bottom: 1rem;
   }
 
-  .intro p {
+  #intro p {
     font-size: 16px;
+    margin-bottom: 1rem;
   }
 
   .media {
@@ -219,12 +236,11 @@ h2 {
 
   h2 {
     font-size: 1.5rem;
+    margin-top: 0.5rem;
   }
   .about-me p {
     margin: 36px 12px;
-
   }
-
 
   .language {
     text-align: center;
@@ -237,16 +253,6 @@ h2 {
     width: 60px;
   }
 
-  /* .education {
-    text-align: center;
-    display: inline;
-  } */
-
-  .edu {
-    display: grid;
-    grid-template-rows: 1fr;
-  }
-
   .skill {
     grid-template-columns: 1fr 1fr 1fr;
     text-align: left;
@@ -254,6 +260,10 @@ h2 {
     text-align: center;
   }
 
+  .education {
+    height: 100%;
+    display: block;
+  }
 
   .work-experience {
     display: inline;
@@ -261,5 +271,11 @@ h2 {
 
   .work-experience ul {
     margin: 24px 0 0 0;
+    list-style: none;
   }
+
+  .work-experience li {
+    margin-bottom: 1rem;
+  }
+
 }
