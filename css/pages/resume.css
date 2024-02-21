@@ -135,7 +135,7 @@ h2 {
 .work-experience {
   display: grid;
   grid-template-columns: 1fr 3fr;
-  width: 800px;
+  width: 90%;
   margin: 0 auto 24px;
 }
 
@@ -146,6 +146,7 @@ h2 {
 .work-experience h3, p{
   margin-bottom: 8px;
 }
+
 
 .work-experience span {
   opacity: 0.7;
@@ -163,6 +164,11 @@ h2 {
   border-radius: 4px;
   font-weight: 600;
   margin: 0 24px;
+}
+
+.button:hover {
+  background-color: #C864A4;
+  color: #010141;
 }
 
 
@@ -266,12 +272,17 @@ h2 {
   }
 
   .work-experience {
-    display: inline;
+    display: block;
+  }
+
+  .work-experience h3, p{
+    margin-top: 16px;
   }
 
   .work-experience ul {
     margin: 24px 0 0 0;
     list-style: none;
+    padding-left: 0 ;
   }
 
   .work-experience li {
