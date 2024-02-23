@@ -5,57 +5,19 @@ h1 {
 
 /* about me */
 
-.about {
+
+#about {
   overflow: hidden;
   display: flex;
   align-items: center;
-  margin: 24px 0;
   justify-content: space-between;
-}
-
-.container.main {
-  margin-top: 50px;
   margin: auto;
+  padding: 5rem 0 0 ;
 }
 
-.contact-me {
-  margin: 44px;
-  display: flex;
-  justify-content: space-around;
-}
-
-#mail, #resume {
-  font-size: 1rem;
-  font-weight: 500;
-  list-style: none;
-  display: inline-block;
-  padding: 0.5rem 1.5rem;
-  border-radius: 50px;
-  margin: 0 2.5rem;
-  transition: all 0.3s ease-in-out;
-
-}
-
-.contact-me #resume {
-  color: #ffffff;
-  background-color:#010141 ;
-}
-
-#mail {
-  background-color: #A88A00;
-  color: #010141;
-}
-
-.contact-me a:hover {
-  color: #010141;
-  background-color: #A88A00;
-  transform: scale(1.1);
-}
-
-#mail:hover {
-  background-color: #010141 ;
-  transform: scale(1.1);
-  color: white;
+#about-me h1 {
+  text-align: center;
+  padding: 90px 0 ;
 }
 
 .profile-img {
@@ -73,16 +35,61 @@ h1 {
 
 .about-info {
   width: 70%;
+  color: #ffffff;
 }
 
+
 .about-info h2 {
-  margin-bottom: 12px;
+  margin-bottom: 1.5rem;
+  color: white;
+}
+
+/* contact me section */
+.contact-me {
+  margin: 44px;
+  display: flex;
+  justify-content: space-around;
+}
+
+#mail, #resume {
+  font-size: 1rem;
+  font-weight: 500;
+  list-style: none;
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  border-radius: 50px;
+  margin: 0 2.5rem;
+  transition: all 0.3s ease-in-out;
+}
+
+
+.contact-me #resume {
+  color: #ffffff;
+  border: 1px solid #A88A00 ;
+}
+
+#mail {
+  background-color: #A88A00;
+  color: #010141;
+}
+
+.contact-me a:hover {
+  color: #010141;
+  background-color: #A88A00;
+  transform: scale(1.1);
+}
+
+#mail:hover {
+  background-color: #010141 ;
+  border: 1px solid #ffffff;
+  transform: scale(1.1);
+  color: #A88A00;
 }
 
 /* Background */
 
 .container.my-background {
-  margin: 24px auto 48px;
+  margin: 5rem auto 3rem;
 }
 
 .my-background h2 {
