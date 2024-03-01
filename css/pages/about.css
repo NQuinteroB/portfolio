@@ -4,8 +4,6 @@ h1 {
 }
 
 /* about me */
-
-
 #about {
   overflow: hidden;
   display: flex;
@@ -62,7 +60,6 @@ h1 {
   transition: all 0.3s ease-in-out;
 }
 
-
 .contact-me #resume {
   color: #ffffff;
   border: 1px solid #A88A00 ;
@@ -98,7 +95,7 @@ h1 {
 
 /* media queries */
 
-@media (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   /* For a screen < 960px, this CSS will be read */
   .container {
     width: 700px;
@@ -129,20 +126,23 @@ h1 {
     font-size: 12px;
     padding: 8px 46px;
   }
-
-
 }
 
-@media (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 767px) {
   /* For a screen < 720px, this CSS will be read */
 
   h1 {
     font-size: 2rem;
   }
 
-  .about {
+  #about {
     flex-direction: column;
-    margin: 30px 0;
+    padding: 0;
+  }
+
+  .profile-img {
+    align-self: center;
+    margin: 6rem auto;
   }
 
   .about-info {
@@ -150,12 +150,17 @@ h1 {
     margin: 0;
   }
 
+  #mail,
+  #resume {
+    margin: 0;
+  }
+
   .container.my-background {
-    margin: 30px auto 100px;
+    margin: 6rem auto 100px;
   }
 
   .cards {
-    margin-top: 30px;
+    display: block;
   }
 
   .skill {
@@ -172,7 +177,7 @@ h1 {
 
 }
 
-@media (max-width: 576px) {
+@media (max-width: 480px) {
   /* For a screen < 540px, this CSS will be read */
   body {
     line-height: 1.9;
