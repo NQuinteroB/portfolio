@@ -4,8 +4,6 @@ h1 {
 }
 
 /* about me */
-
-
 #about {
   overflow: hidden;
   display: flex;
@@ -61,7 +59,6 @@ h1 {
   margin: 0 2.5rem;
   transition: all 0.3s ease-in-out;
 }
-
 
 .contact-me #resume {
   color: #ffffff;
@@ -129,8 +126,6 @@ h1 {
     font-size: 12px;
     padding: 8px 46px;
   }
-
-
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
