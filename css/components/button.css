@@ -9,6 +9,7 @@
   padding: 8px 54px;
   display: inline-block;
   margin-top: 12px ;
+  transition: 1s;
 }
 
 .btn-blue:hover {
