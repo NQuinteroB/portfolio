@@ -20,7 +20,7 @@
 .background-img {
   min-height: 250px;
   background-size: cover;
-  border-radius: 4px 4px 0;
+  border-radius: 4px 4px 0 0;
   background-position: center;
 
 }
@@ -31,10 +31,13 @@
 
 #fashion .background-img {
   background-image: url('../../assets/images/fashion.jpg');
+  object-fit: fill;
+  background-position: 0 -245px;
 }
 
 #social .background-img {
   background-image: url('../../assets/images/aliadas.jpg');
+  background-position: 0 -200px;
 }
 
 .background-card > h3 {
@@ -46,6 +49,8 @@
   background-position: 0px ;
 }
 
+
+
 #project2 {
   background-image: url('../../assets/images/udemy-design-agency.png');
   background-position-x: 0;
@@ -55,9 +60,6 @@
   padding: 1.5rem;
 }
 
-#udemy-card .card-title {
-  margin: 1.5rem auto;
-}
 
 .card-title h3 {
   margin-top: 16px;
@@ -65,4 +67,16 @@
 
 .card-title p {
   margin: 2rem 0;
+}
+
+#udemy-card .card-title {
+  padding: 1.5rem ;
+}
+
+#udemy-card h3{
+  margin: 0;
+}
+
+#udemy-card p{
+  margin: 1rem;
 }

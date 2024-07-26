@@ -64,10 +64,6 @@ h1 {
 
 @media (max-width: 576px) {
   /* For a screen < 540px, this CSS will be read */
-  body {
-    line-height: 1.9;
-    text-align: center;
-  }
 
   .image-card {
     margin: 30px 0 30px;

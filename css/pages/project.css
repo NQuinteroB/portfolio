@@ -1,17 +1,19 @@
-h1 {
-  font-size: 2.5rem;
-  color: #010141;
+.main h2 {
+  margin-bottom: 24px;
 }
 
 .container.main {
   margin-top: 50px;
 }
 
+
 .container.projects {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin: 32px auto 50px;
+  margin: 5rem auto 3rem;
 }
+
+
 
 .container.main a {
   color: #0c0c75;
@@ -67,10 +69,6 @@ h1 {
 
 @media (max-width: 576px) {
   /* For a screen < 540px, this CSS will be read */
-  body {
-    line-height: 1.9;
-    text-align: center;
-  }
 
   .image-card {
     margin: 30px 0 30px;

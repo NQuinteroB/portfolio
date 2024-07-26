@@ -15,14 +15,14 @@
 @media (max-width: 992px) {
   /* For a screen < 960px, this CSS will be read */
   .container {
-    width: 700px;
+    width: 95%;
   }
 }
 
 
 @media (max-width: 768px) {
   .container {
-    width: 500px;
+    width: 95%;
   }
 }
 
