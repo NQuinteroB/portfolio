@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Engagement&family=Raleway:wght@100;300;700&family=Source+Sans+Pro:wght@300;600;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 
 @import url('../css/pages/about.css');
 @import url('../css/pages/resume.css');
@@ -72,8 +72,8 @@ h1, h2, h3 {
 }
 
 #greeting {
-  font-family: 'Engagement', cursive;
-  font-size: 2.8rem;
+  font-family: 'Pacifico', cursive;
+  font-size: 2rem;
   /* margin: 10px 36px; */
   color: white;
 
