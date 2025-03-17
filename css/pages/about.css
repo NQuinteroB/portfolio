@@ -7,7 +7,7 @@ h1 {
 #about {
   overflow: hidden;
   display: flex;
-  align-items: center;
+  
   justify-content: space-between;
   margin: auto;
   padding: 5rem 0 0 ;
@@ -95,9 +95,6 @@ h1 {
 
 @media (min-width: 768px) and (max-width: 1024px) {
   /* For a screen < 960px, this CSS will be read */
-  .container {
-    width: 700px;
-  }
 
   .about-me h1 {
     font-size: 2.1rem;
@@ -110,10 +107,6 @@ h1 {
   .profile-img {
     float: left;
     margin: 4px 26px;
-  }
-
-  .about-info {
-    width: auto;
   }
 
   .contact-me a {
@@ -144,12 +137,7 @@ h1 {
   }
 
   .about-info {
-    width: 100%;
-    margin: 0;
-  }
-
-  #mail,
-  #resume {
+    width: 95%;
     margin: 0;
   }
 

@@ -9,35 +9,57 @@
 #social {
   margin: 3rem auto 6rem;
 }
-.background-card {
+
+.card {
   background: white;
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
   text-align: center;
-  min-height: 250px;
-  background-size: cover;
-  background-position: center;
 }
 
-#web .background-card {
+.background-img {
+  min-height: 250px;
+  background-size: cover;
+  border-radius: 4px 4px 0 0;
+  background-position: center;
+
+}
+
+#web .background-img {
   background-image: url('../../assets/images/Web.png');
 }
 
-#fashion .background-card {
+#fashion .background-img {
   background-image: url('../../assets/images/fashion.jpg');
+  object-fit: fill;
+  background-position: 0 -245px;
 }
 
-#social .background-card {
+#social .background-img {
   background-image: url('../../assets/images/aliadas.jpg');
+  background-position: 0 -200px;
 }
 
 .background-card > h3 {
   letter-spacing: 3px;
 }
 
-.card-title {
-  margin: 3rem auto;
+#tin-dog{
+  background-image: url("../../assets/images/udemy-TinDog.png");
+  background-position: 0px ;
 }
+
+
+
+#project2 {
+  background-image: url('../../assets/images/udemy-design-agency.png');
+  background-position-x: 0;
+}
+
+.card-title {
+  padding: 1.5rem;
+}
+
 
 .card-title h3 {
   margin-top: 16px;
@@ -45,4 +67,16 @@
 
 .card-title p {
   margin: 2rem 0;
+}
+
+#udemy-card .card-title {
+  padding: 1.5rem ;
+}
+
+#udemy-card h3{
+  margin: 0;
+}
+
+#udemy-card p{
+  margin: 1rem;
 }

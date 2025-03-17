@@ -148,10 +148,7 @@ h1 {
 
 @media (max-width: 540px) {
   /* For a screen < 540px, this CSS will be read */
-  body {
-    line-height: 1.9;
 
-  }
   .container {
     width: 300px;
   }
@@ -189,4 +186,5 @@ h1 {
     width: 350px;
   }
 
+  
 }
