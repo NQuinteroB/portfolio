@@ -49,15 +49,16 @@ h1, h2, h3 {
 
 .main-container {
   width: 100%;
-  text-align: left;
+  text-align: center;
   color: white;
+  margin: 56px 0 ;
 }
 
 .center {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   flex-grow: 1;
 }
@@ -66,9 +67,9 @@ h1, h2, h3 {
 .main-container h1{
   letter-spacing: 24px;
   font-size: 2.7rem;
-  margin: 36px auto 0;
+  /* margin: 36px auto 0; */
   color: white;
-  text-align: center;
+
 }
 
 #greeting {
@@ -96,7 +97,7 @@ h1, h2, h3 {
   letter-spacing: 9px;
   color: white;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 .menu {
