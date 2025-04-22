@@ -67,7 +67,7 @@ h1, h2, h3 {
 .main-container h1{
   letter-spacing: 24px;
   font-size: 2.7rem;
-  /* margin: 36px auto 0; */
+  margin: 36px auto 0;
   color: white;
 
 }
